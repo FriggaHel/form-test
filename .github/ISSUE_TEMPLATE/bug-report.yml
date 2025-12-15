@@ -13,10 +13,10 @@ body:
         The more information you provide, the easier it will be for us to fix the issue.
 
   - type: dropdown
-    id: version
+    id: environment
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: environment
+      description: In which environment did the issue occur?
       options:
         - Production EU
         - Production US
