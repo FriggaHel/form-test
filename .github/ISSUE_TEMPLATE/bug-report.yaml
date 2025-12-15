@@ -1,0 +1,76 @@
+name: Supervizor Bug Report
+description: File a bug report.
+title: "BUG:"
+labels: ["bug", "product-triage"]
+projects: ["FriggaHel/form-test"]
+assignees:
+  - FriggaHel
+type: bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report! Please fill out the template below as best as you can.
+        The more information you provide, the easier it will be for us to fix the issue.
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - Production EU
+        - Production US
+        - Staging EU
+        - Staging US
+        - Review (Any)
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Tell us what actually happened.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Tell us what you expected to happen instead.
+      placeholder: Tell us what you expected!
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Tell us what how to reproduce the issue. Be as detailed as possible.
+      placeholder: First, navigate to..., then click on..., finally...
+    validations:
+      required: true
+
+
+  - type: input
+    id: jam-link
+    attributes:
+      label: Jam link
+      description: Providing a Jam link is mandatory for us to investigate the issue.
+      placeholder: ex. https://jam.dev/c/xxxxxx
+    validations:
+      required: true
+
+  - type: textarea
+    id: helpful-infos
+    attributes:
+      label: Anything else that might be helpful?
+      description: Please provide anything that is relevant to the issue. Link to the control, files, etc... 
+      placeholder: Tell us more!
+      value: "Control link: https://app.supervizor.com/controls/xxxxxx"
+    validations:
+      required: true
