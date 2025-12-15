@@ -5,7 +5,6 @@ labels: ["bug", "product-triage"]
 projects: ["FriggaHel/form-test"]
 assignees:
   - FriggaHel
-type: bug
 body:
   - type: markdown
     attributes:
